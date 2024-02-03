@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: 	#7B68EE;
+}
+</style>
+</head>
+<body style="background-color: #E6E6FA;">
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="assunto.html">Assunto</a></li>
+  <li><a class="active" href="questionario.html">Questionário</a></li>
+  <li style="float:right"><a href="about.html">About</a></li>
+</ul>
+<form>
+  <p><b>Você possui um pet em casa?</b></p>
+  <input type="radio" name="pet" id="pet" value="Sim">
+  <label for="pet">Sim</label><br>
+  <input type="radio" name="pet" id="pet" value="Não, mas gostaria">
+  <label for="pet">Não, mas gostaria</label><br>
+  <input type="radio" name="pet" id="pet" value="Não, e nem pretendo">
+  <label for="pet">Não, e nem pretendo</label><br><br>
+  <p><b>Quantos pets possui?</b></p>
+  <label for="quantidade">Quantidade:</label>
+  <input type="number" name="quantidade" id="quantidade" min="1" max="5"> <br> <br>
+  <div>
+    <p><b>Qual o tipo de pet possui?</b></p>
+    <input name="animais" list="animais" placeholder="Animais">
+    <datalist id="animais">
+        <option value="Cachorro">
+        <option value="Gato">
+        <option value="Coelho">
+        <option value="Tartaruga">
+        <option value="Passaro">
+        <option value="Outro"></option>
+    </datalist>
+  </div>
+  <p><b>Gostaria de ter algum outro tipo de pet? Se sim, qual?</b></p>
+  <input type="text" name="resposta" placeholder="Digite sua resposta">
+  <label for="resposta"></label><br>
+  <p><b>Que tipo de pet você nunca teria?</b></p>
+  <input type="text" name="resposta" placeholder="Digite sua resposta">
+  <label for="resposta"></label><br>
+  <p><b>Personalidades de seu pet</b></p>
+  <input type="checkbox" name="pet" id="pet" value="Bagunceiro">
+  <label for="pet">Bagunceiro</label>
+  <input type="checkbox" name="pet" id="pet" value="Carinhoso">
+  <label for="pet">Carinhoso</label><br>
+  <input type="checkbox" name="pet" id="pet" value="Protetor">
+  <label for="pet">Protetor&nbsp; &nbsp; &nbsp;</label>
+  <input type="checkbox" name="pet" id="pet" value="Medroso">
+  <label for="pet">Medroso</label><br>
+  <input type="checkbox" name="pet" id="pet" value="Brincalhão">
+  <label for="pet">Brincalhão</label>
+  <input type="checkbox" name="pet" id="pet" value="Teimoso">
+  <label for="pet">Teimoso</label><br>
+  <input type="checkbox" name="pet" id="pet" value="Obediente">
+  <label for="pet">Obediente&nbsp;</label>
+  <input type="checkbox" name="pet" id="pet" value="Agitado">
+  <label for="pet">Agitado</label><br>
+  <input type="checkbox" name="pet" id="pet" value="Calmo">
+  <label for="pet">Calmo&nbsp; &nbsp; &nbsp; &nbsp;</label>
+  <input type="checkbox" name="pet" id="pet" value="Curioso">
+  <label for="pet">Curioso</label><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
